@@ -6,8 +6,39 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9020BB1818C09AB2002BF4A9 /* dsp_echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB0818C09AB2002BF4A9 /* dsp_echo.c */; };
+		9020BB1918C09AB2002BF4A9 /* dsp_fetchinstr.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB0918C09AB2002BF4A9 /* dsp_fetchinstr.c */; };
+		9020BB1A18C09AB2002BF4A9 /* dsp_linresampler.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB0A18C09AB2002BF4A9 /* dsp_linresampler.c */; };
+		9020BB1B18C09AB2002BF4A9 /* dsp_panoramizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB0B18C09AB2002BF4A9 /* dsp_panoramizer.c */; };
+		9020BB1C18C09AB2002BF4A9 /* dsp_wavetable.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB0C18C09AB2002BF4A9 /* dsp_wavetable.c */; };
+		9020BB1D18C09AB2002BF4A9 /* dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020BB0D18C09AB2002BF4A9 /* dsp.h */; };
+		9020BB1E18C09AB2002BF4A9 /* libdigibooster3.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020BB0E18C09AB2002BF4A9 /* libdigibooster3.h */; };
+		9020BB1F18C09AB2002BF4A9 /* lists.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020BB0F18C09AB2002BF4A9 /* lists.h */; };
+		9020BB2018C09AB2002BF4A9 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB1018C09AB2002BF4A9 /* loader.c */; };
+		9020BB2118C09AB2002BF4A9 /* musicmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020BB1118C09AB2002BF4A9 /* musicmodule.h */; };
+		9020BB2218C09AB2002BF4A9 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 9020BB1218C09AB2002BF4A9 /* player.c */; };
+		9020BB2318C09AB2002BF4A9 /* player.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020BB1318C09AB2002BF4A9 /* player.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		905D180D18C098FF00F13556 /* liblibdigibooster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibdigibooster.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9020BB0418C09AB2002BF4A9 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		9020BB0518C09AB2002BF4A9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		9020BB0818C09AB2002BF4A9 /* dsp_echo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp_echo.c; sourceTree = "<group>"; };
+		9020BB0918C09AB2002BF4A9 /* dsp_fetchinstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp_fetchinstr.c; sourceTree = "<group>"; };
+		9020BB0A18C09AB2002BF4A9 /* dsp_linresampler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp_linresampler.c; sourceTree = "<group>"; };
+		9020BB0B18C09AB2002BF4A9 /* dsp_panoramizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp_panoramizer.c; sourceTree = "<group>"; };
+		9020BB0C18C09AB2002BF4A9 /* dsp_wavetable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp_wavetable.c; sourceTree = "<group>"; };
+		9020BB0D18C09AB2002BF4A9 /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
+		9020BB0E18C09AB2002BF4A9 /* libdigibooster3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libdigibooster3.h; sourceTree = "<group>"; };
+		9020BB0F18C09AB2002BF4A9 /* lists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lists.h; sourceTree = "<group>"; };
+		9020BB1018C09AB2002BF4A9 /* loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loader.c; sourceTree = "<group>"; };
+		9020BB1118C09AB2002BF4A9 /* musicmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicmodule.h; sourceTree = "<group>"; };
+		9020BB1218C09AB2002BF4A9 /* player.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = player.c; sourceTree = "<group>"; };
+		9020BB1318C09AB2002BF4A9 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		9020BB1418C09AB2002BF4A9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9020BB1518C09AB2002BF4A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		905D180D18C098FF00F13556 /* libdigibooster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdigibooster.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +55,22 @@
 		905D180418C098FF00F13556 = {
 			isa = PBXGroup;
 			children = (
+				9020BB0418C09AB2002BF4A9 /* CHANGELOG */,
+				9020BB0518C09AB2002BF4A9 /* COPYING */,
+				9020BB0818C09AB2002BF4A9 /* dsp_echo.c */,
+				9020BB0918C09AB2002BF4A9 /* dsp_fetchinstr.c */,
+				9020BB0A18C09AB2002BF4A9 /* dsp_linresampler.c */,
+				9020BB0B18C09AB2002BF4A9 /* dsp_panoramizer.c */,
+				9020BB0C18C09AB2002BF4A9 /* dsp_wavetable.c */,
+				9020BB0D18C09AB2002BF4A9 /* dsp.h */,
+				9020BB0E18C09AB2002BF4A9 /* libdigibooster3.h */,
+				9020BB0F18C09AB2002BF4A9 /* lists.h */,
+				9020BB1018C09AB2002BF4A9 /* loader.c */,
+				9020BB1118C09AB2002BF4A9 /* musicmodule.h */,
+				9020BB1218C09AB2002BF4A9 /* player.c */,
+				9020BB1318C09AB2002BF4A9 /* player.h */,
+				9020BB1418C09AB2002BF4A9 /* README */,
+				9020BB1518C09AB2002BF4A9 /* README.md */,
 				905D180E18C098FF00F13556 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -31,7 +78,7 @@
 		905D180E18C098FF00F13556 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				905D180D18C098FF00F13556 /* liblibdigibooster.a */,
+				905D180D18C098FF00F13556 /* libdigibooster.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -43,6 +90,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9020BB1F18C09AB2002BF4A9 /* lists.h in Headers */,
+				9020BB1E18C09AB2002BF4A9 /* libdigibooster3.h in Headers */,
+				9020BB2118C09AB2002BF4A9 /* musicmodule.h in Headers */,
+				9020BB2318C09AB2002BF4A9 /* player.h in Headers */,
+				9020BB1D18C09AB2002BF4A9 /* dsp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +115,7 @@
 			);
 			name = libdigibooster;
 			productName = libdigibooster;
-			productReference = 905D180D18C098FF00F13556 /* liblibdigibooster.a */;
+			productReference = 905D180D18C098FF00F13556 /* libdigibooster.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -96,6 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9020BB2018C09AB2002BF4A9 /* loader.c in Sources */,
+				9020BB1B18C09AB2002BF4A9 /* dsp_panoramizer.c in Sources */,
+				9020BB1818C09AB2002BF4A9 /* dsp_echo.c in Sources */,
+				9020BB1918C09AB2002BF4A9 /* dsp_fetchinstr.c in Sources */,
+				9020BB2218C09AB2002BF4A9 /* player.c in Sources */,
+				9020BB1C18C09AB2002BF4A9 /* dsp_wavetable.c in Sources */,
+				9020BB1A18C09AB2002BF4A9 /* dsp_linresampler.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +233,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = digibooster;
 			};
 			name = Debug;
 		};
@@ -182,7 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = digibooster;
 			};
 			name = Release;
 		};
@@ -205,6 +264,7 @@
 				905D181318C098FF00F13556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
