@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>18798EC2-0EC3-443E-A953-C259DE7E5BDE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>libdigibooster</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9E6A624-C67F-4B89-A426-6A285424E756</key>
+		<string>ssh://github.com/michalsc/libdigibooster3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>libdigibooster.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9E6A624-C67F-4B89-A426-6A285424E756</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/michalsc/libdigibooster3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9E6A624-C67F-4B89-A426-6A285424E756</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9E6A624-C67F-4B89-A426-6A285424E756</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libdigibooster</string>
+		</dict>
+	</array>
+</dict>
+</plist>
