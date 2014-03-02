@@ -221,7 +221,7 @@ struct DSPObject *dsp_echo_new(int mixfreq, int type)
 {
 	struct Echo *obj;
 
-	if (obj = db3_malloc(sizeof(struct Echo)))
+	if ((obj = db3_malloc(sizeof(struct Echo))) != NULL)
 	{
 		obj->object.dsp_type = DSPTYPE_ECHO;
 		obj->object.dsp_pull = dsp_echo_pull;
@@ -243,7 +243,7 @@ struct DSPObject *dsp_echo_new(int mixfreq, int type)
 
 		obj->BufferSize = ((mixfreq >> 1) + (mixfreq >> 6) + 3) & ~4;
 
-		if (obj->DelayLine = db3_malloc(obj->BufferSize << 2))
+		if ((obj->DelayLine = db3_malloc(obj->BufferSize << 2)) != NULL)
 		{
 			int i;
 			int32_t *p = (int32_t*)obj->DelayLine;

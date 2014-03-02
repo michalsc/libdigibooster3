@@ -180,7 +180,7 @@ void msynth_dsp_dispose_chain(struct MinList *chain)
 {
 	struct DSPObject *dspo;
 
-	while (dspo = (struct DSPObject*)DB3RemHead(chain))
+	while ((dspo = (struct DSPObject*)DB3RemHead(chain)) != NULL)
 	{
 		dspo->dsp_dispose(dspo);
 	}
@@ -288,7 +288,7 @@ void msynth_trigger(struct DB3Module *m, struct ModTrack *mt)
 
 	// Set sample offset and loop direction. Flush any buffers.
 
-	if (last = (struct DSPObject*)mt->DSPInstrChain.mlh_TailPred)
+	if ((last = (struct DSPObject*)mt->DSPInstrChain.mlh_TailPred) != NULL)
 	{
 		last->dsp_flush(last);
 
@@ -2061,13 +2061,13 @@ void* DB3_NewEngine(struct DB3Module *m, uint32_t mixfreq, uint32_t bufsize)
 
 	if (m && bufsize && (mixfreq >= 8000) && (mixfreq <= 192000))
 	{
-		if (msyn = db3_malloc(sizeof(struct ModSynth)))
+		if ((msyn = db3_malloc(sizeof(struct ModSynth))) != NULL)
 		{
-			if (msyn->Accumulator = db3_malloc(bufsize << 3))
+			if ((msyn->Accumulator = db3_malloc(bufsize << 3)) != NULL)
 			{
-				if (msyn->PreMixBuf = db3_malloc(bufsize << 2))     
+				if ((msyn->PreMixBuf = db3_malloc(bufsize << 2)) != NULL)
 				{
-					if (msyn->Tracks = db3_malloc(m->NumTracks * sizeof(struct ModTrack)))
+					if ((msyn->Tracks = db3_malloc(m->NumTracks * sizeof(struct ModTrack))) != NULL)
 					{
 						msyn->Mod = m;
 						msyn->MixFreq = mixfreq;
@@ -2219,7 +2219,7 @@ void DB3_SetVolume(void *msyn0, int16_t level)
 {
 	struct ModSynth *msyn = (struct ModSynth*)msyn0;
 
-	if (msyn->BoostMultiplier = msynth_boost_multiplier(level, msyn->Mod->NumTracks))
+	if ((msyn->BoostMultiplier = msynth_boost_multiplier(level, msyn->Mod->NumTracks)) != 0)
 	{
 		msyn->BoostLimit = 0x7FFFFFFF / msyn->BoostMultiplier;
 	}

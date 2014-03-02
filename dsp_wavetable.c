@@ -365,7 +365,7 @@ struct DSPObject *dsp_sampled_instr_new(int16_t *data, int32_t loop_start,
 {
 	struct SampledInstrument *smi;
 
-	if (smi = db3_malloc(sizeof(struct SampledInstrument)))
+	if ((smi = db3_malloc(sizeof(struct SampledInstrument))) != NULL)
 	{
 		smi->object.dsp_type = DSPTYPE_UNROLLER;
 		smi->object.dsp_pull = dsp_sampled_instr_pull;

@@ -172,9 +172,9 @@ struct DSPObject *dsp_resampler20_new(void)
 {
 	struct Resampler20 *obj;
 
-	if (obj = db3_malloc(sizeof(struct Resampler20)))
+	if ((obj = db3_malloc(sizeof(struct Resampler20))) != NULL)
 	{
-		if (obj->buffer = db3_malloc(2048))
+		if ((obj->buffer = db3_malloc(2048)) != NULL)
 		{
 			int i;
 

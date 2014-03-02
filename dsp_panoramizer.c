@@ -177,7 +177,7 @@ struct DSPObject *dsp_panoramizer_new(int16_t *phase_table)
 {
 	struct Panoramizer *obj;
 
-	if (obj = db3_malloc(sizeof(struct Panoramizer)))
+	if ((obj = db3_malloc(sizeof(struct Panoramizer))) != NULL)
 	{
 		int i;
 		

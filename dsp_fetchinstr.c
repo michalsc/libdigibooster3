@@ -113,7 +113,7 @@ struct DSPObject *dsp_fetchinstr_new(struct MinList *instr_chain)
 {
 	struct FetchInstr *obj;
 
-	if (obj = db3_malloc(sizeof(struct FetchInstr)))
+	if ((obj = db3_malloc(sizeof(struct FetchInstr))) != NULL)
 	{
 		obj->object.dsp_type = DSPTYPE_FETCHINSTR;
 		obj->object.dsp_pull = dsp_fetchinstr_pull;
