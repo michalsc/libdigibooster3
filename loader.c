@@ -245,7 +245,7 @@ static int runtime_little_endian_check(void)
 	return 1;
 }
 
-#elif defined TARGET_LINUX
+#else
 
 static int runtime_little_endian_check(void)
 {
