@@ -1715,7 +1715,7 @@ void msynth_do_envelopes(struct ModSynth *msyn)
 // msynth_next_tick()
 //==============================================================================================
 
-int msynth_next_tick(struct ModSynth *msyn, unsigned long bufdelay)
+int msynth_next_tick(struct ModSynth *msyn, uint32_t bufdelay)
 {
 	int bpm2, samples, stop = 0;
 
@@ -1908,7 +1908,7 @@ void msynth_reset(struct ModSynth* msyn, int unmute)
 // msynth_mix_track_in()
 //==============================================================================================
 
-void msynth_mix_track_in(struct ModSynth *msyn, unsigned int track, int32_t *accu, unsigned long frames)
+void msynth_mix_track_in(struct ModSynth *msyn, unsigned int track, int32_t *accu, uint32_t frames)
 {
 	struct ModTrack *mt = &msyn->Tracks[track];
 	struct DSPObject *dspo;
@@ -2307,7 +2307,7 @@ uint32_t DB3_Mix(void *msyn0, uint32_t frames, int16_t *out)
 {
 	struct ModSynth *msyn = (struct ModSynth*)msyn0;
 	uint32_t frame_counter = 0;
-	unsigned long frames_left = frames;
+	uint32_t frames_left = frames;
 	int32_t *accu = msyn->Accumulator;
 	int stop = 0;
 

@@ -887,7 +887,7 @@ static int read_instrument(struct DataChunk *dc, struct DB3ModInstrS *mi, struct
 
 	if ((error = read_data(dc, ah, b, 50)) == 0)
 	{
-		int namelen;
+		unsigned long namelen;
 
 		if (b[29]) namelen = 30;
 		else namelen = db3_strlen((char*)b);
@@ -963,7 +963,7 @@ static int read_song(struct DataChunk *dc, struct DB3ModSong *ms, struct Abstrac
 
 	if ((error = read_data(dc, ah, b, 46)) == 0)
 	{
-		int namelen;
+		unsigned long namelen;
 
 		if (b[43]) namelen = 44;
 		else namelen = db3_strlen((char*)b);
@@ -1058,7 +1058,8 @@ static int read_chunk_info(struct DB3Module *m, struct DataChunk *dc, struct Abs
 static int read_chunk_name(struct DB3Module *m, struct DataChunk *dc, struct AbstractHandle *ah)
 {
 	char name[48];
-	int error = 0, i, namelen = 0;
+	int error = 0, i;
+    unsigned long namelen = 0;
 
 	for (i = 0; i < 48; i++) name[i] = 0;
 
@@ -1386,7 +1387,7 @@ struct DB3Module *DB3_LoadFromHandle(struct AbstractHandle *ah, int *errptr)
 
 static int file_read(struct AbstractHandle *ah, void *buf, int bytes)
 {
-	int k;
+	unsigned long k;
 
 	k = db3_fread(buf, bytes, 1, (BPTR)ah->ah_Handle);
 	return k ? 1 : 0;
